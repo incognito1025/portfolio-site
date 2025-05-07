@@ -1,7 +1,5 @@
 # Nahida Niki Khanam – Portfolio
 
-# Hi, I’m Niki
-
 Software engineer with a background in nonprofit strategy and tech for social good. This site showcases projects I've built during my full-stack training.
 
 I’m interested in software engineering, nonprofit consulting, automation, equity-centered technology, and operational problem-solving.
