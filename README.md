@@ -14,6 +14,5 @@ I’m looking to collaborate on projects that improve systems, expand access, an
 
 My career goal is to become a software engineer and/or administrator who builds tools that are scalable, reliable, and grounded in real-world needs.
 
-**Email:** nkhanam@pursuit.org  
 **Portfolio:** [Link coming soon]  
 **CV:** Available upon request
