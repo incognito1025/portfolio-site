@@ -1,171 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Niki Khanam | Software Engineer</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />   <link /> html tag used to define a relationship between the current document and external resource. It's often used to include stylesheets, fonts or icons. rel="preconnect" tells the browser to establish a connection early to the specified domain (Google Fonts) before it actually needs to request any resource. It helps speed up loading time. href="" is hypertext reference. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="#home">NK</a>
-        </div>
-        <nav>
-          <div class="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul class="nav-menu">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/main.css" />        <!--  / <link /> tag used to include external resources like stylesheets or font. rel="stylesheet" tells the browser "This link is a CSS stylesheet", href="styles/main.css" hypertext reference this specifies the path to the CSS file. styles/ means threre's a folder named styles. main.css is the name of the css file inside the folder. -->
+</head> <!-- section of an html document that contains the metadata. usually located at the top of the body. -->
+<body>
+  <!-- <header /> appear at the top of the entire webpage at the start of a section or article. typicall contains the logo, site tite, navigation menu, tagline or heading -->
+  <header>
+    <!-- <div> "division" and is a container element used to group together HTML elements so they can be styled or control them as a unit with CSS or Javascript -->
+    <div class="container">
+      <!-- a class is an attribute you can add to an html element to group or style that element  , class="container" assigns a CSS class name "container" to this <div>. classes let you style multiple elements using CSS. .container in CSS to apply layout, color, padding, etc -->
+      <div class="logo">
+        <!-- "anchor" and is used to crate hyperlinks -clickable links that goes to another page, section or site  -->
+         <!-- # is used to create an internal link to a specific element on the same page. #home is a shortcut to a sdction on the current page-->
+        <a href="#home"></a>NK</a>
       </div>
-    </header>
+      <!-- <nav> semantic HTML5 tag used to group navigation links. Tells the browser and screen readers, "This is the navigation area" -->
+      <nav>
+        <!-- <div class="menu toggle"> in this context it acts as a button that toggles the mobile menu -->
+        <div class="menu toggle"> 
+          <!-- menu toggle has CSS and JavaScript attached to it. menu for styling, toggle for showing/hiding the full nav menu -->
+           <!-- <span> in this context, the of these elements are used to draw the three lines of a hamburger icon. with CSS, each span becomes a horizontal bar -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- class="nav-menu" connects this list to a css style. <ul> is an unordered list. <li> is a list item. <a href="#..."> an internal link to a section with the matching id. class="active" applies special styling to the currently selected link  -->
+        <ul class="nav-menu"> 
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="projects">Projects</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <p class="intro">Software Engineer</p>
-            <h1>Nahida Niki <span class="highlight">Khanam</span></h1>
-            <p class="subtitle">
-              Building thoughtful, accessible, and resilient software
-            </p>
-            <div class="cta-buttons">
-              <a href="#projects" class="cta-button primary">View My Work</a>
-              <a href="#contact" class="cta-button secondary">Get In Touch</a>
-            </div>
+  <!-- <main> main content of the page (only one per page), <section> meaningful chunk of content inside the page, id="home" allow internal link (to scroll here, class="hero" used to apply css styling to this section, <div> division, <p> subtitle paragraph with class for styling, <h1> highest priority main heading, <a> anchor, <a href=#projects> anchor hypertext reference in the internal links called projects - call to action buttons,  -->
+    <!-- An attribute provides additional info about HTML element. they are written inside the start tag of an element, and are used to define or configure the behavior, content or presentation of the element. Attributes modify the behavior or properties of HTML elements, come in key-value-value pairs : "<element key="value", common attributes include id, class, scr, href, alt, style and more-->
+     <!-- A class is a specific type of attribute that is used to group elements for the purpose of applying CSS styles or targeting them with JS. It allows you to define a group of elements that share the same style or behavior, multiple elements can be applied assigned to the same class, classes can be shared across multiple elements and multiple classes can be applied to a single element -->
+      <!-- An element consists of a start tag, content, and end tag (in most cases). they define the structure content and layout of a webpage. common elements include <h1>, <h2>, <p>, <span>, <strong>, etc.<div>, <header>, <footer>, <section>, <article>, etc. <input>, <textarea>, <button>, <form>, etc. <a> (anchor), <link>, <img>, etc. -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="intro">Software Engineer</p>
+          <h1>Nahida Niki <span class="highlight">Khanam</span></h1>
+          <p class="subtitle">Building throughtful, accessible, and resilient software</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="cta-button primary">View My Work</a>
+            <a href="#contact" class="cta-button secondary">Get In Touch</a>
           </div>
         </div>
-        <div class="scroll-indicator">
-          <div class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+      </div>
+
+      <!-- <div class="scroll-indicator"> wraps the whole scroll cue a container for a visual scroll cue (like a bouncing arrow, <div class="arrow"> holds the animated arrow bars and styles the arrow's structure, <span> empty span tags are used as the lines or bars that form the arrow, in this context they become 3 stacked lines with a vertical arrow, acts as individual bars or lines of the arrow. -->
+      <div class="scroll-indicator">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="about" class="about">
-        <div class="container">
-          <div class="section-header">
-            <h2>About Me</h2>
-            <div class="separator"></div>
+    <!-- <section id="about" class="about">, <section> define meaningful chunk of content inside the page, id="about" The "id" attribute with "about" allow for an internal link to scroll directly to this section, class="about" "class attribute with "about" is used to apply specific CSS style to this section, "container" is a class used to group content and manage its width, often to center and align content properly, "section header" is a class used to style and group the header for this section, <h2> is a header element, typically used for section titles or headings, <"separator" is a class used to visually separate the title from the rest of the content, often styled as a line or space. -->
+    <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+      <div class="separator"></div>
+    </div>
+
+    <!-- <div class="about-content" is a class used to style or group this div element, "about-image is a class used to style or group the image section, "image-container" is a class to further style or group the image, or syling, <img /> image source, src specifies the source of the image, alt alternative text description of the image for accessibility (helpful for screen readers)-->
+    <div class="about-content">
+      <div class="about-image">
+        <div class="image-container">
+          <img src="https://via.placeholder.com/400" alt="Niki Khanam" />
+        </div>
+        
+
+        <!-- <div class="social-links" is a class used to style or group the social media, <a> anchor tag that defines a link, href hypertext reference attribute holds the link destination. "target='_blank" opens the link to a new tab, and the "fab fa-github" is a Font Awesome icon for Github, <i> fab stands for font Awesome, <i> italics-->
+          <div class="social-links">
+            <a href="https://github.com/incognito1025" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nahida-niki-khanam" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/nikikhanam" target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
+      </div>
 
-          <div class="about-content">
-            <div class="about-image">
-              <div class="image-container">
-                <!-- replace with actual profile image -->
-                <img src="https://via.placeholder.com/400" alt="Niki Khanam" />
+      <!-- <div class="about-text"> division tag, "about-text" class is an attribute that is used to group and style this section of texts -->
+      <div class="about-text">
+        <p>
+          Tech is powerful—but only when it is built with intention. My
+          aim is to build thoughtful, accessible, and resilient software
+          that addresses real-world problems and enhances user
+          experiences—especially in support of missions that promote
+          equity, access, and meaningful social change.
+        </p>
+        <p>
+          I bring a solid foundation in full-stack development, paired
+          with a commitment to continuous learning, creative
+          problem-solving, and collaborative work. Whether working
+          independently or on a team, I strive to write clean, scalable
+          code and contribute to technology that empowers users, supports
+          communities, and creates lasting impact.
+        </p>
+
+        <!-- <div class="interests"> "interests" is a class used to group and style the section for Areas of Interest, <h3> header is used for subheadings with a medium priority level, "interest-tags" groups each individual interest tag for styling, "span" is used to wrap each interest and allows for space between them -->
+        <div class="interests">
+          <h3>Areas of Interest</h3>
+            <div class="interest-tags">
+              <span>Software Engineer</span>
+              <span>Nonprofit Consulting</span>
+              <span>Equity-Centered Technology</span>
+              <span>Operational Problem-Solving</span>
+            </div>
+        </div>
+
+        <!-- <div class="background-highlight" is a class used to group and style the section for Background, <h3> header is used for subheading with a medium priority level -->
+        <div class="background-highlight">
+          <h3>My Background</h3>
+          <p>
+            My professional journey spans nonprofit strategy, executive
+            support, and cross-functional project operations. This diverse
+            experience has given me a unique perspective on how technology
+            can be leveraged to solve real-world problems and create
+            meaningful impact.
+          </p>
+          <p>
+            I'm currently learning Swift, Java, and AI-powered workflows
+            to expand my technical toolkit and enhance my ability to build
+            comprehensive solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <!--<section id="skills" class="skills"> "section" is used to define a meaningful chunk of content within the page, the "id" attribute with "skills" allows for an internal link to scroll directly to this section, the class attribute with "skill" is used to apply specific CSS styles to this section."container" is a class used to group content and manage its width, often used to center and align content properly within the page, "section-header" is a class used to style and group the header for this section, <h2> is a header element, typically used for section titles or headings indicating the start of a new section. "seperator" is a class used to visually separate the title from the rest of the content, often styled as a horizontal line or space to distinguish sections   -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills & Expertise</h2>
+          <div class="separator"></div>
+        </div>
+
+
+        <!-- <div class="skill-content">, class is an specific type of attribute used to group elements for the purpose of CSS styles. in this case, - "skill-content" is a class used to group elements for the purpose of CSS styling, it wraps and apply specific CSS styles to this section. "skill-category" is a class used to style the individual skill category section, the "category-header" is a class used to style and group the header for this section, category-icon is used to style the icon that represents the category eg a code icon, <i> italics is used for italics text but here it's used to display an icon with the class "fas fa-code" from Font Awesome, <h3> is a header tag with less than medium prioirty, typically used for sections under the main heading -->
+        <div class="skill-content">
+          <div class="skill-category">
+            <div class="category-header">
+              <div class="category-icon">
+                <i "fas fa-code"></i>
               </div>
-              <div class="social-links">
-                <a href="https://github.com/incognito1025" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nahida-niki-khanam" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/nikikhanam" target="_blank"><i class="fab fa-twitter"></i></a>
-              </div>
+              <h3>Frontend</h3>
             </div>
 
-            <div class="about-text">
-              <p>
-                Tech is powerful—but only when it is built with intention. My
-                aim is to build thoughtful, accessible, and resilient software
-                that addresses real-world problems and enhances user
-                experiences—especially in support of missions that promote
-                equity, access, and meaningful social change.
-              </p>
-              <p>
-                I bring a solid foundation in full-stack development, paired
-                with a commitment to continuous learning, creative
-                problem-solving, and collaborative work. Whether working
-                independently or on a team, I strive to write clean, scalable
-                code and contribute to technology that empowers users, supports
-                communities, and creates lasting impact.
-              </p>
-
-              <div class="interests">
-                <h3>Areas of Interest</h3>
-                <div class="interest-tags">
-                  <span>Software Engineering</span>
-                  <span>Nonprofit Consulting</span>
-                  <span>Automation</span>
-                  <span>Equity-Centered Technology</span>
-                  <span>Operational Problem-Solving</span>
+            <!-- <div class="skill-items">, the "skill-items is a class used to group elements for the purpose of CSS styling, it wraps and apply specific CSS styles to the entire section of the skill item. "skill-item" is a class used to style the individual skill item within the section, the "skill-icon is a class used to style the icon associated with each skill, the <i> italics for text, in this case its used  for the  "fab fa-html5" class from Font Awesome, <span> is used to display the name of the skill, "HTML5" in this case, typically alongside the icon. -->
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-html5"></i>
                 </div>
+                <span>HTML5</span>
               </div>
 
-              <div class="background-highlight">
-                <h3>My Background</h3>
-                <p>
-                  My professional journey spans nonprofit strategy, executive
-                  support, and cross-functional project operations. This diverse
-                  experience has given me a unique perspective on how technology
-                  can be leveraged to solve real-world problems and create
-                  meaningful impact.
-                </p>
-                <p>
-                  I'm currently learning Swift, Java, and AI-powered workflows
-                  to expand my technical toolkit and enhance my ability to build
-                  comprehensive solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="skills">
-        <div class="container">
-          <div class="section-header">
-            <h2>Skills & Expertise</h2>
-            <div class="separator"></div>
-          </div>
-
-          <div class="skills-content">
-            <div class="skill-category">
-              <div class="category-header">
-                <div class="category-icon">
-                  <i class="fas fa-code"></i>
-                </div>
-                <h3>Frontend</h3>
-              </div>
               <div class="skill-items">
                 <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                  <span>HTML5</span>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                  <span>CSS3</span>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-js"></i></div>
+                  <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                  </div>
                   <span>JavaScript</span>
                 </div>
+
+              <div class="skill-items">
                 <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-react"></i></div>
+                  <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                  </div>
                   <span>React</span>
                 </div>
               </div>
             </div>
 
+            <!-- <div class="skill-category">, the "skill-category" is a class used to group elements for the purpose of CSS styling, it wraps and apply specific CSS styles to the entire section of these skill items related to a particular category. "category-header" is a class used to style the header of the skill category section, the "category-icon" is a class used to style the icon associated with the category (eg database icon), the <i> is used for italizing text, in this case it is used to display an icon "fas fa-dababase" from Font Awesome, <h3> is a header of lower-than-medium priority, typically used as subheadings or section titles.  -->
             <div class="skill-category">
               <div class="category-header">
                 <div class="category-icon">
@@ -173,21 +199,33 @@
                 </div>
                 <h3>Backend</h3>
               </div>
+
               <div class="skill-items">
                 <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                  <div class="skill-icon">
+                    <i class="fab fa-node-js"></i>
+                  </div>
                   <span>Node.js</span>
                 </div>
+
                 <div class="skill-item">
-                  <div class="skill-icon"><i class="fas fa-database"></i></div>
+                  <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                  </div>
                   <span>SQL</span>
                 </div>
+
                 <div class="skill-item">
-                  <div class="skill-icon"><i class="fas fa-server"></i></div>
+                  <div class="skill-icon">
+                    <i class="fas fa-server"></i>
+                  </div>
                   <span>Express</span>
                 </div>
+
                 <div class="skill-item">
-                  <div class="skill-icon"><i class="fas fa-database"></i></div>
+                  <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                  </div>
                   <span>MongoDB</span>
                 </div>
               </div>
@@ -198,291 +236,19 @@
                 <div class="category-icon">
                   <i class="fas fa-cogs"></i>
                 </div>
-                <h3>Tools & Others</h3>
-              </div>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                  <span>Git</span>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-github"></i></div>
-                  <span>GitHub</span>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                  <span>Command Line</span>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon">
-                    <i class="fas fa-mobile-alt"></i>
-                  </div>
-                  <span>Responsive Design</span>
-                </div>
+                <h3>Tools & others</h3>
               </div>
             </div>
 
-            <div class="skill-category">
-              <div class="category-header">
-                <div class="category-icon">
-                  <i class="fas fa-book"></i>
-                </div>
-                <h3>Currently Learning</h3>
-              </div>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-swift"></i></div>
-                  <span>Swift</span>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fab fa-java"></i></div>
-                  <span>Java</span>
-                </div>
-                <div class="skill-item">
-                  <div class="skill-icon"><i class="fas fa-robot"></i></div>
-                  <span>AI Workflows</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
 
-      <section id="projects" class="projects">
-        <div class="container">
-          <div class="section-header">
-            <h2>Selected Projects</h2>
-            <div class="separator"></div>
-          </div>
 
-          <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="ai">AI</button>
-          </div>
-
-          <div class="project-grid">
-            <!-- Project Card 1 -->
-            <div class="project-card" data-category="web ai">
-              <div class="project-image">
-                <img
-                  src="https://via.placeholder.com/600x400"
-                  alt="Podcast GPT Tool"
-                />
-              </div>
-              <div class="project-details">
-                <h3 class="project-title">Podcast GPT Tool</h3>
-                <p class="project-description">
-                  An AI-powered web application that transcribes and summarizes
-                  podcast episodes, making content more accessible and
-                  searchable.
-                </p>
-                <div class="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>OpenAI API</span>
-                  <span>Express</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link"
-                    ><i class="fab fa-github"></i> View Code</a
-                  >
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Card 2 -->
-            <div class="project-card" data-category="web mobile">
-              <div class="project-image">
-                <img
-                  src="https://via.placeholder.com/600x400"
-                  alt="Real-time Dispatch Prototype"
-                />
-              </div>
-              <div class="project-details">
-                <h3 class="project-title">Real-time Dispatch Prototype</h3>
-                <p class="project-description">
-                  A responsive web application for emergency services to
-                  coordinate and track resources in real-time, improving
-                  response times.
-                </p>
-                <div class="project-tech">
-                  <span>JavaScript</span>
-                  <span>Socket.io</span>
-                  <span>MongoDB</span>
-                  <span>Express</span>
-                </div>
-                <div class="project-links">
-                  <a href="#" class="project-link"
-                    ><i class="fab fa-github"></i> View Code</a
-                  >
-                  <a href="#" class="project-link"
-                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Card 3 -->
-            <div class="project-card" data-category="mobile">
-              <div class="project-image coming-soon">
-                <img
-                  src="https://via.placeholder.com/600x400"
-                  alt="Mobile Application Coming Soon"
-                />
-                <div class="overlay">
-                  <span>Coming Soon</span>
-                </div>
-              </div>
-              <div class="project-details">
-                <h3 class="project-title">Mobile Application</h3>
-                <p class="project-description">
-                  A new project currently in development. Check back soon for
-                  updates!
-                </p>
-                <div class="project-tech">
-                  <span>Swift</span>
-                  <span>iOS</span>
-                  <span>Firebase</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
- <!-- Fixed Contact Section -->
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="section-header">
-      <h2>Get In Touch</h2>
-      <div class="separator"></div>
-    </div>
-
-    <div class="contact-content">
-      <div class="contact-info">
-        <p class="contact-intro">
-          Interested in collaborating on projects that improve systems,
-          expand access, and make people's lives easier? I'd love to
-          connect!
-        </p>
-
-        <div class="contact-methods">
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fab fa-linkedin"></i>
-            </div>
-            <div class="contact-detail">
-              <h3>LinkedIn</h3>
-              <p><a href="https://www.linkedin.com/in/nahida-niki-khanam" target="_blank" rel="noopener noreferrer">linkedin.com/in/nahida-niki-khanam</a></p>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon">
-              <i class="fab fa-github"></i>
-            </div>
-            <div class="contact-detail">
-              <h3>GitHub</h3>
-              <p><a href="https://github.com/incognito1025" target="_blank" rel="noopener noreferrer">github.com/incognito1025</a></p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
-</section>
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">NK</div>
-          <p>&copy; 2025 Nahida Niki Khanam. All Rights Reserved.</p>
-          <div class="social-links">
-            <a href="https://github.com/incognito1025" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/nahida-niki-khanam/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/nikikhanam" target="_blank"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    </section>
 
-    <script>
-      // mobile menu toggle
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navMenu = document.querySelector(".nav-menu");
 
-      menuToggle.addEventListener("click", () => {
-        menuToggle.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
-
-      // Active navigation link
-      const navLinks = document.querySelectorAll(".nav-menu a");
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", function () {
-          navLinks.forEach((link) => link.classList.remove("active"));
-          this.classList.add("active");
-          navMenu.classList.remove("active");
-          menuToggle.classList.remove("active");
-        });
-      });
-
-      // Project filters
-      const filterBtns = document.querySelectorAll(".filter-btn");
-      const projectCards = document.querySelectorAll(".project-card");
-
-      filterBtns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          // active button
-          filterBtns.forEach((btn) => btn.classList.remove("active"));
-          btn.classList.add("active");
-
-          // filter projects
-          const filter = btn.getAttribute("data-filter");
-
-          projectCards.forEach((card) => {
-            if (filter === "all") {
-              card.style.display = "block";
-            } else {
-              if (card.getAttribute("data-category").includes(filter)) {
-                card.style.display = "block";
-              } else {
-                card.style.display = "none";
-              }
-            }
-          });
-        });
-      });
-
-      // scroll to section
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          const targetSection = document.querySelector(targetId);
-
-          window.scrollTo({
-            top: targetSection.offsetTop - 70,
-            behavior: "smooth",
-          });
-        });
-      });
-
-      // scroll header style
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector("header");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
-    </script>
-  </body>
+  </main>
+  
+</body>
 </html>
